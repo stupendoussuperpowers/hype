@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		FF7990762C67713A00EBA5C3 /* hype */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hype; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7990792C67713A00EBA5C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF7990802C67719F00EBA5C3 /* hype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hype.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		FF7990782C67713A00EBA5C3 /* hype */ = {
 			isa = PBXGroup;
 			children = (
+				FF7990802C67719F00EBA5C3 /* hype.entitlements */,
 				FF7990792C67713A00EBA5C3 /* main.m */,
 			);
 			path = hype;
@@ -244,7 +246,12 @@
 		FF79907E2C67713A00EBA5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = hype/hype.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCVL77H557;
+				ENABLE_HARDENED_RUNTIME = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ssahayhype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -252,7 +259,12 @@
 		FF79907F2C67713A00EBA5C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = hype/hype.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCVL77H557;
+				ENABLE_HARDENED_RUNTIME = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ssahayhype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
